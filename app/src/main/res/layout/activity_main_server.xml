@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/badukpan"
+    android:orientation="vertical"
+    tools:context=".EnterGameActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginTop="250dp"
+        android:text="서버 정보를 입력하세요"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/serverIPText"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:hint="입장할 서버 IP를 입력하세요"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/serverPortText"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="입장할 서버 포트를 입력하세요"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnEnterServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:background="#5E1B1717"
+        android:text="게임 입장"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="20dp"
+        android:background="#5E1B1717"
+        android:text="뒤로가기"
+        android:onClick="onExitButtonClicked"/>
+
+</LinearLayout>
